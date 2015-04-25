@@ -1,0 +1,15 @@
+<template name="deleteNote">
+  <div class="alert alert-danger" role="alert">
+    <h2>Do you really want to delete this note?</h2>
+    <hr>
+    <p>
+      <strong>Title:</strong> {{this.title}}<br/>
+      <strong>Text:</strong> {{this.text}}<br/>
+    </p>
+    <hr>
+    <p>
+      <button class="btn btn-danger deleteConfirm">Yes</button>
+      <a href="{{pathFor 'notesList'}}" class="btn btn-danger">No</a>
+    </p>
+  </div>
+</template>
